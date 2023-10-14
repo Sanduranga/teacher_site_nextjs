@@ -1,7 +1,8 @@
 import connectMongoDB from "@/lib/mongoDB";
 import Teacher from "@/models/teacherMsg";
+import { NextRequest } from "next/server";
 
-export async function PUT(request: any, { params }: any) {
+export async function PUT(request: NextRequest, { params }: any) {
   const { id } = params;
   const {
     updatedVideoLink: videoLink,
