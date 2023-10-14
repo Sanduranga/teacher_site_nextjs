@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { useEffect } from "react";
-import { HiPencilAlt } from "react-icons/hi";
-import { HiOutlineTrash } from "react-icons/hi";
+// import { HiPencilAlt } from "react-icons/hi";
+// import { HiOutlineTrash } from "react-icons/hi";
 import { useRouter } from "next/navigation";
 import { fetchStudents } from "@/redux/features/student/studentSlice";
 import { useDispatch, useSelector } from "react-redux";
@@ -87,7 +87,8 @@ export default function OurStudents() {
 
               <div className="flex">
                 <Link href={`/editStudent/${ourStudents.studentId}`}>
-                  <HiPencilAlt size={24} />
+                  {/* <HiPencilAlt size={24} /> */}
+                  <div>DEL</div>
                 </Link>{" "}
                 <h1
                   onClick={() => {
@@ -95,7 +96,8 @@ export default function OurStudents() {
                   }}
                   className="text-red-700"
                 >
-                  <HiOutlineTrash size={24} />
+                  {/* <HiOutlineTrash size={24} /> */}
+                  <div>EDIT</div>
                 </h1>
               </div>
             </div>
